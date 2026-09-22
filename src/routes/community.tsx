@@ -32,26 +32,34 @@ function CommunityPage() {
         <section className="community-hero">
           <div className="community-orb community-orb-one" />
           <div className="community-orb community-orb-two" />
+          <div className="community-hero-glow" />
           <div className="container community-hero-grid">
             <div className="community-copy">
               <div className="community-badge"><MessageCircle size={14} /> FREE WHATSAPP COMMUNITY</div>
               <p className="section-kicker">LAHORE KE REHAISHIYON KE LIYE</p>
               <h1>Agar aap Lahore mein rehte hain aur aapko <span>ear, nose ya throat ka issue hai?</span></h1>
               <p className="community-lead">
-                Hamari <strong>free WhatsApp community</strong> join karein jahan aapko ear, nose aur throat se related useful tips, guidance aur health information di jati hai.
+                Hamari <strong>free WhatsApp community</strong> join karein jahan Dr. Hasnain ke through ear, nose aur throat se related useful tips, awareness aur practical guidance share ki jati hai.
               </p>
+              <div className="community-benefit-row">
+                <span><CheckCircle2 size={15} /> ENT Health Tips</span>
+                <span><CheckCircle2 size={15} /> Free to Join</span>
+                <span><CheckCircle2 size={15} /> Lahore</span>
+              </div>
               <a className="community-join-button" href={communityJoinUrl} target="_blank" rel="noreferrer">
-                <MessageCircle size={19} /> Free WhatsApp Community Join Karein <ArrowRight size={17} />
+                <MessageCircle size={20} /> Community Join Karein <ArrowRight size={17} />
               </a>
-              <p className="community-note">Free to join • Useful ENT tips • Lahore residents ke liye</p>
+              <p className="community-note">No fee • Educational content • Join anytime</p>
             </div>
 
             <div className="community-visual">
               <div className="community-logo-card">
-              <div className="community-card-top"><span>DR. HASNAIN HAIDER</span><span>ENT</span></div>
+                <div className="community-card-top"><span>DR. HASNAIN HAIDER</span><span>ENT</span></div>
+                <div className="community-whatsapp-mark"><MessageCircle size={24} /></div>
                 <img src={entLogoAsset.url} alt="Dr. Hasnain ENT logo" />
-                <strong>ENT Health Tips<br />for Lahore</strong>
+                <strong>ENT Tips & Guidance<br /><span>For Lahore</span></strong>
                 <span className="community-card-caption">Ear • Nose • Throat</span>
+                <div className="community-card-pill">100% FREE COMMUNITY</div>
               </div>
               <div className="community-location">
                 <MapPin size={19} />
