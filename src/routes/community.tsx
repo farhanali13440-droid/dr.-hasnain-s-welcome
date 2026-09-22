@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, MapPin, MessageCircle, ShieldCheck } from "lucide-react";
+import entLogoAsset from "../assets/ent-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/community")({
   head: () => ({
@@ -21,7 +22,7 @@ function CommunityPage() {
       <header className="community-nav">
         <div className="container community-nav-inner">
           <div className="brand">
-            <img className="brand-logo" src="/ent-logo.svg" alt="Dr. Hasnain ENT logo" />
+            <img className="brand-logo" src={entLogoAsset.url} alt="Dr. Hasnain ENT logo" />
             <span><strong>Dr. Hasnain</strong><small>ENT • Head & Neck Surgical Care</small></span>
           </div>
         </div>
@@ -47,8 +48,8 @@ function CommunityPage() {
 
             <div className="community-visual">
               <div className="community-logo-card">
-                <div className="community-card-top"><span>DR. HASNAIN HAIDER</span><span>ENT</span></div>
-                <img src="/ent-logo.svg" alt="Dr. Hasnain ENT logo" />
+              <div className="community-card-top"><span>DR. HASNAIN HAIDER</span><span>ENT</span></div>
+                <img src={entLogoAsset.url} alt="Dr. Hasnain ENT logo" />
                 <strong>ENT Health Tips<br />for Lahore</strong>
                 <span className="community-card-caption">Ear • Nose • Throat</span>
               </div>

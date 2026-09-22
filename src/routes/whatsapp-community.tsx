@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, MapPin, MessageCircle, ShieldCheck } from "lucide-react";
+import entLogoAsset from "../assets/ent-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/whatsapp-community")({
   head: () => ({
@@ -23,7 +24,7 @@ function WhatsAppCommunity() {
       <header className="community-nav">
         <div className="container community-nav-inner">
           <a className="brand" href="/">
-            <img className="brand-logo" src="/ent-logo.svg" alt="Dr. Hasnain ENT logo" />
+            <img className="brand-logo" src={entLogoAsset.url} alt="Dr. Hasnain ENT logo" />
             <span>
               <strong>Dr. Hasnain</strong>
               <small>ENT • Head & Neck Surgical Care</small>
@@ -73,7 +74,7 @@ function WhatsAppCommunity() {
                   <span>DR. HASNAIN HAIDER</span>
                   <span>ENT</span>
                 </div>
-                <img src="/ent-logo.svg" alt="Dr. Hasnain ENT" />
+                <img src={entLogoAsset.url} alt="Dr. Hasnain ENT" />
                 <strong>
                   ENT HEALTH
                   <br />
@@ -158,7 +159,7 @@ function WhatsAppCommunity() {
         <div className="container footer-grid">
           <div>
             <a className="brand footer-brand" href="/">
-              <img className="brand-logo" src="/ent-logo.svg" alt="Dr. Hasnain ENT logo" />
+              <img className="brand-logo" src={entLogoAsset.url} alt="Dr. Hasnain ENT logo" />
               <span>
                 <strong>Dr. Hasnain Haider</strong>
                 <small>ENT Specialist</small>
