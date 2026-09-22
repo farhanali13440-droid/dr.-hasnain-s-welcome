@@ -7,6 +7,12 @@ import {
 import { useState } from "react";
 import entLogoAsset from "../assets/ent-logo.jpg.asset.json";
 import drHasnainAsset from "../assets/dr-hasnain.jpg.asset.json";
+import careEarImg from "../assets/care-ear.jpg";
+import careNoseImg from "../assets/care-nose.jpg";
+import careThroatImg from "../assets/care-throat.jpg";
+import careHeadNeckImg from "../assets/care-head-neck.jpg";
+import careSurgicalImg from "../assets/care-surgical.jpg";
+import careOncologyImg from "../assets/care-oncology.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -26,12 +32,12 @@ const phone = "0311-4632164";
 const whatsapp = "923114632164";
 
 const concerns = [
-  { icon: Ear, title: "Ear Problems", text: "Ear pain, infections, blocked ears and hearing-related concerns." },
-  { icon: Stethoscope, title: "Nose & Sinus", text: "Nasal blockage, sinus symptoms, allergies and breathing concerns." },
-  { icon: Headphones, title: "Throat & Voice", text: "Throat discomfort, tonsil concerns, voice and swallowing problems." },
-  { icon: UserRound, title: "Head & Neck", text: "Assessment of head and neck lumps, swellings and related concerns." },
-  { icon: Syringe, title: "Surgical Care", text: "ENT and head & neck surgical assessment with a patient-focused approach." },
-  { icon: ShieldCheck, title: "Oncology Care", text: "Specialized head & neck surgical oncology assessment and care." },
+  { icon: Ear, img: careEarImg, title: "Ear Problems", text: "Ear pain, infections, blocked ears and hearing-related concerns." },
+  { icon: Stethoscope, img: careNoseImg, title: "Nose & Sinus", text: "Nasal blockage, sinus symptoms, allergies and breathing concerns." },
+  { icon: Headphones, img: careThroatImg, title: "Throat & Voice", text: "Throat discomfort, tonsil concerns, voice and swallowing problems." },
+  { icon: UserRound, img: careHeadNeckImg, title: "Head & Neck", text: "Assessment of head and neck lumps, swellings and related concerns." },
+  { icon: Syringe, img: careSurgicalImg, title: "Surgical Care", text: "ENT and head & neck surgical assessment with a patient-focused approach." },
+  { icon: ShieldCheck, img: careOncologyImg, title: "Oncology Care", text: "Specialized head & neck surgical oncology assessment and care." },
 ];
 
 const faqs = [
