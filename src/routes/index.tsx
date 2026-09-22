@@ -168,7 +168,7 @@ function Index() {
 
       <footer><div className="container footer-grid">
         <div><a className="brand footer-brand" href="#home"><img className="brand-logo" src="/ent-logo.svg" alt="Dr. Hasnain ENT logo" /><span><strong>Dr. Hasnain Haider</strong><small>ENT Specialist</small></span></a><p className="footer-description">ENT & Head Neck Surgical Care in Lahore with specialist training in Head & Neck Surgical Oncology.</p></div>
-        <div><h4>Quick Links</h4><a href="#about">About</a><a href="#care">Care Areas</a><a href="#why">Why Dr. Hasnain</a><a href="#faq">FAQs</a></div>
+        <div><h4>Quick Links</h4><a href="#about">About</a><a href="#care">Care Areas</a><a href="#why">Why Dr. Hasnain</a><a href="#faq">FAQs</a><a href="/community">Free WhatsApp Community</a></div>
         <div><h4>Connect</h4><a href={`tel:${phone.replace(/-/g, "")}`}><Phone size={15} /> {phone}</a><a href={`https://wa.me/${whatsapp}`} target="_blank" rel="noreferrer"><MessageCircle size={15} /> WhatsApp</a><span className="social-label"><Facebook size={15} /> Dr. Hasnain Haider - ENT Specialist</span><a href="https://instagram.com/dr.hasnain_haider" target="_blank" rel="noreferrer"><Instagram size={15} /> @dr.hasnain_haider</a></div>
       </div><div className="container footer-bottom"><span>© 2026 Dr. Hasnain Haider. All rights reserved.</span><span>ENT • Head & Neck Surgical Care</span></div></footer>
 
