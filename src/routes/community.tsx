@@ -14,7 +14,7 @@ export const Route = createFileRoute("/community")({
 
 const phone = "0311-4632164";
 const whatsapp = "923114632164";
-const communityJoinUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent("Hi Dr. Hasnain, I would like to join the free ENT WhatsApp community.")}`;
+const communityJoinUrl = "https://chat.whatsapp.com/HWFaDcRfgLcCBdcvCFUESY";
 
 function CommunityPage() {
   return (
