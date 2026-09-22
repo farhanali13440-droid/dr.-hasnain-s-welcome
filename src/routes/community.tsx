@@ -103,34 +103,7 @@ function CommunityPage() {
         </section>
       </main>
 
-      <footer>
-        <div className="container footer-grid">
-          <div>
-            <a className="brand footer-brand" href="/">
-              <img className="brand-logo" src="/ent-logo.svg" alt="Dr. Hasnain ENT logo" />
-              <span><strong>Dr. Hasnain Haider</strong><small>ENT Specialist</small></span>
-            </a>
-            <p className="footer-description">ENT & Head Neck Surgical Care in Lahore with specialist training in Head & Neck Surgical Oncology.</p>
-          </div>
-          <div>
-            <h4>Quick Links</h4>
-            <a href="/">Home</a>
-            <a href="/#about">About</a>
-            <a href="/#care">Care Areas</a>
-            <a href="/community">WhatsApp Community</a>
-          </div>
-          <div>
-            <h4>Contact</h4>
-            <a href={`tel:${phone.replace(/-/g, "")}`}>{phone}</a>
-            <a href={communityJoinUrl} target="_blank" rel="noreferrer"><MessageCircle size={15} /> Join Community</a>
-            <span className="social-label"><MapPin size={15} /> 9 E2, WAPDA Town, Lahore</span>
-          </div>
-        </div>
-        <div className="container footer-bottom">
-          <span>© 2026 Dr. Hasnain Haider. All rights reserved.</span>
-          <span>ENT • Head & Neck Surgical Care</span>
-        </div>
-      </footer>
+
     </div>
   );
 }
