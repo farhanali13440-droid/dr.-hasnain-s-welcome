@@ -67,3 +67,7 @@ footer{color:#b7c8e1;background:#031638}.footer-grid{padding:60px 0 45px;display
 .portrait-art-photo{inset:58px 24px 66px;border-radius:18px;overflow:hidden}
 .portrait-art-photo .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
 .portrait-art-photo .portrait-copy{left:0;right:0;bottom:0;padding:26px 10px 12px;background:linear-gradient(180deg,transparent,rgba(6,42,120,.85));color:#fff}
+
+/* Community hero photo */
+.community-hero-photo{width:min(250px,72%);height:300px;object-fit:cover;object-position:center 15%;border-radius:22px;box-shadow:0 16px 40px rgba(6,42,120,.18);position:relative;z-index:1;border:4px solid rgba(255,255,255,.75)}
+@media(max-width:720px){.community-hero-photo{width:min(220px,66%);height:260px}}
