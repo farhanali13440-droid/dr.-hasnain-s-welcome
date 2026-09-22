@@ -34,16 +34,16 @@ function WhatsAppCommunity() {
             <div className="community-copy">
               <div className="community-badge"><MessageCircle size={15} /> FREE WHATSAPP COMMUNITY</div>
               <p className="section-kicker">FOR LAHORE RESIDENTS</p>
-              <h1>Lahore mein rehte hain aur <span>Ear, Nose & Throat</span> ka masla hai?</h1>
+              <h1>Are you a resident of Lahore and experiencing an <span>Ear, Nose & Throat</span> problem?</h1>
               <p className="community-lead">
-                To hamari <strong>Free WhatsApp Community</strong> join karein. Yahan aapko ear, nose aur throat health ke useful tips, awareness information aur helpful guidance milti rahegi.
+                Join our <strong>Free WhatsApp Community</strong>. Get useful ear, nose and throat health tips, awareness information, and practical guidance to help you better understand common ENT concerns.
               </p>
               <a className="community-join-button" href={communityLink} target="_blank" rel="noreferrer">
                 <MessageCircle size={20} />
                 Join Free WhatsApp Community
                 <ArrowRight size={18} />
               </a>
-              <p className="community-note">Free to join • Lahore-focused ENT health awareness</p>
+              <p className="community-note">Free to join • ENT health awareness for Lahore residents</p>
             </div>
 
             <div className="community-visual">
