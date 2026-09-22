@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as WhatsappCommunityRouteImport } from './routes/whatsapp-community'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -17,26 +18,36 @@ const IndexRoute = IndexRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 
+const WhatsappCommunityRoute = WhatsappCommunityRouteImport.update({
+  id: '/whatsapp-community',
+  path: '/whatsapp-community',
+  getParentRoute: () => rootRouteImport,
+} as any)
+
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/whatsapp-community': typeof WhatsappCommunityRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/whatsapp-community': typeof WhatsappCommunityRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/whatsapp-community': typeof WhatsappCommunityRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/whatsapp-community'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/whatsapp-community'
+  id: '__root__' | '/' | '/whatsapp-community'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  WhatsappCommunityRoute: typeof WhatsappCommunityRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -53,6 +64,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  WhatsappCommunityRoute: WhatsappCommunityRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
