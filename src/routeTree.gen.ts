@@ -11,7 +11,6 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CommunityRouteImport } from './routes/community'
-import { Route as WhatsappCommunityRouteImport } from './routes/whatsapp-community'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -23,40 +22,31 @@ const CommunityRoute = CommunityRouteImport.update({
   path: '/community',
   getParentRoute: () => rootRouteImport,
 } as any)
-const WhatsappCommunityRoute = WhatsappCommunityRouteImport.update({
-  id: '/whatsapp-community',
-  path: '/whatsapp-community',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
-  '/whatsapp-community': typeof WhatsappCommunityRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
-  '/whatsapp-community': typeof WhatsappCommunityRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
-  '/whatsapp-community': typeof WhatsappCommunityRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/community' | '/whatsapp-community'
+  fullPaths: '/' | '/community'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/community' | '/whatsapp-community'
-  id: '__root__' | '/' | '/community' | '/whatsapp-community'
+  to: '/' | '/community'
+  id: '__root__' | '/' | '/community'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CommunityRoute: typeof CommunityRoute
-  WhatsappCommunityRoute: typeof WhatsappCommunityRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -75,20 +65,12 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CommunityRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/whatsapp-community': {
-      id: '/whatsapp-community'
-      path: '/whatsapp-community'
-      fullPath: '/whatsapp-community'
-      preLoaderRoute: typeof WhatsappCommunityRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CommunityRoute: CommunityRoute,
-  WhatsappCommunityRoute: WhatsappCommunityRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
