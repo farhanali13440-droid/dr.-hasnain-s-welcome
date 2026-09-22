@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import entLogoAsset from "../assets/ent-logo.jpg.asset.json";
+import drHasnainAsset from "../assets/dr-hasnain.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -92,9 +93,8 @@ function Index() {
             <div className="hero-visual" aria-label="Dr. Hasnain Haider profile">
               <div className="portrait-card brand-aligned-card">
                 <div className="portrait-topline"><span>DR. HASNAIN HAIDER</span><span>ENT</span></div>
-                <div className="portrait-art">
-                  <div className="portrait-halo" />
-                  <img className="hero-logo" src={entLogoAsset.url} alt="Dr. Hasnain ENT logo" />
+                <div className="portrait-art portrait-art-photo">
+                  <img className="hero-photo" src={drHasnainAsset.url} alt="Dr. Hasnain Haider" loading="eager" />
                   <div className="portrait-copy"><span>HEAD & NECK</span><strong>SURGICAL ONCOLOGY</strong></div>
                 </div>
                 <div className="portrait-badge"><ShieldCheck size={17} /><span>Specialist ENT Care</span></div>
