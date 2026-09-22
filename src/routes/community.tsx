@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, MapPin, MessageCircle, ShieldCheck } from "lucide-react";
 import entLogoAsset from "../assets/ent-logo.jpg.asset.json";
+import drHasnainEnt2Asset from "../assets/dr-hasnain-ent-2.png.asset.json";
+
 
 export const Route = createFileRoute("/community")({
   head: () => ({
