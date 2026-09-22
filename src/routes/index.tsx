@@ -7,6 +7,7 @@ import {
 import { useState } from "react";
 import entLogoAsset from "../assets/ent-logo.jpg.asset.json";
 import drHasnainAsset from "../assets/dr-hasnain.jpg.asset.json";
+import drHasnainEntAsset from "../assets/dr-hasnain-ent.png.asset.json";
 import careEarImg from "../assets/care-ear.jpg";
 import careNoseImg from "../assets/care-nose.jpg";
 import careThroatImg from "../assets/care-throat.jpg";
@@ -131,7 +132,10 @@ function Index() {
 
         <section className="section about-section" id="about"><div className="container about-grid">
           <div className="about-visual">
-            <div className="about-card"><div className="about-monogram">HH</div><span>DR. HASNAIN HAIDER</span><strong>ENT SPECIALIST</strong><small>Head & Neck Surgical Oncology</small></div>
+            <div className="about-photo-card">
+              <img src={drHasnainEntAsset.url} alt="Dr. Hasnain Haider in clinic" loading="lazy" />
+              <div className="about-photo-overlay"><span>DR. HASNAIN HAIDER</span><strong>ENT SPECIALIST</strong><small>Head & Neck Surgical Oncology</small></div>
+            </div>
             <div className="about-accent"><Award size={18} /><span>Gold Medalist<br /><strong>MBBS</strong></span></div>
           </div>
           <div className="section-heading">
