@@ -20,11 +20,10 @@ function CommunityPage() {
     <div className="community-page">
       <header className="community-nav">
         <div className="container community-nav-inner">
-          <a className="brand" href="/">
+          <div className="brand">
             <img className="brand-logo" src="/ent-logo.svg" alt="Dr. Hasnain ENT logo" />
             <span><strong>Dr. Hasnain</strong><small>ENT • Head & Neck Surgical Care</small></span>
-          </a>
-          <a className="community-back" href="/">Back to Website</a>
+          </div>
         </div>
       </header>
 
