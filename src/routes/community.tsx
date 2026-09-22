@@ -55,14 +55,15 @@ function CommunityPage() {
             </div>
 
             <div className="community-visual">
-              <div className="community-logo-card">
+              <div className="community-logo-card community-hero-card">
                 <div className="community-card-top"><span>DR. HASNAIN HAIDER</span><span>ENT</span></div>
                 <div className="community-whatsapp-mark"><MessageCircle size={24} /></div>
-                <img src={entLogoAsset.url} alt="Dr. Hasnain ENT logo" />
+                <img className="community-hero-photo" src={drHasnainEnt2Asset.url} alt="Dr. Hasnain Haider in clinic" />
                 <strong>ENT Tips & Guidance<br /><span>For Lahore</span></strong>
                 <span className="community-card-caption">Ear • Nose • Throat</span>
                 <div className="community-card-pill">100% FREE COMMUNITY</div>
               </div>
+
               <div className="community-location">
                 <MapPin size={19} />
                 <span><strong>Lahore</strong><small>Local ENT community</small></span>
