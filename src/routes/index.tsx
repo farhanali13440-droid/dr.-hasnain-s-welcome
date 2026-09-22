@@ -120,8 +120,12 @@ function Index() {
 
         <section className="section" id="care"><div className="container">
           <div className="section-heading centered"><p className="section-kicker">FIND YOUR CARE</p><h2>What health concern can we assist with?</h2><p>Explore the main areas of ENT and Head & Neck care covered by Dr. Hasnain Haider.</p></div>
-          <div className="concern-grid">{concerns.map(({ icon: Icon, title, text }) =>
-            <article className="care-card" key={title}><div className="icon-box"><Icon size={24} /></div><h3>{title}</h3><p>{text}</p><a href="#contact">Book Consultation <ArrowRight size={15} /></a></article>
+          <div className="concern-grid">{concerns.map(({ icon: Icon, img, title, text }) =>
+            <article className="care-card" key={title}>
+              <img className="care-img" src={img} alt={title} loading="lazy" width={1024} height={640} />
+              <div className="icon-box"><Icon size={24} /></div>
+              <h3>{title}</h3><p>{text}</p><a href="#contact">Book Consultation <ArrowRight size={15} /></a>
+            </article>
           )}</div>
         </div></section>
 
