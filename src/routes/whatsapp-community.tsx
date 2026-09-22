@@ -11,7 +11,7 @@ export const Route = createFileRoute("/whatsapp-community")({
   component: WhatsAppCommunity,
 });
 
-const communityLink = "https://wa.me/923114632164?text=I%20want%20to%20join%20the%20free%20ENT%20WhatsApp%20community";
+const communityLink = "https://chat.whatsapp.com/HWFaDcRfgLcCBdcvCFUESY";
 
 function WhatsAppCommunity() {
   return (
