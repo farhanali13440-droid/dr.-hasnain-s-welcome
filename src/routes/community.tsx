@@ -35,15 +35,15 @@ function CommunityPage() {
           <div className="container community-hero-grid">
             <div className="community-copy">
               <div className="community-badge"><MessageCircle size={14} /> FREE WHATSAPP COMMUNITY</div>
-              <p className="section-kicker">FOR LAHORE RESIDENTS</p>
-              <h1>Living in Lahore and having <span>ear, nose or throat problems?</span></h1>
+              <p className="section-kicker">LAHORE KE REHAISHIYON KE LIYE</p>
+              <h1>Agar aap Lahore mein rehte hain aur aapko <span>ear, nose ya throat ka issue hai?</span></h1>
               <p className="community-lead">
-                Join our <strong>free WhatsApp community</strong> to receive practical ENT health tips, helpful guidance and educational information about common ear, nose and throat concerns.
+                Hamari <strong>free WhatsApp community</strong> join karein jahan aapko ear, nose aur throat se related useful tips, guidance aur health information di jati hai.
               </p>
               <a className="community-join-button" href={communityJoinUrl} target="_blank" rel="noreferrer">
-                <MessageCircle size={19} /> Join the Free WhatsApp Community <ArrowRight size={17} />
+                <MessageCircle size={19} /> Free WhatsApp Community Join Karein <ArrowRight size={17} />
               </a>
-              <p className="community-note">Free to join • Educational tips • For Lahore residents</p>
+              <p className="community-note">Free to join • Useful ENT tips • Lahore residents ke liye</p>
             </div>
 
             <div className="community-visual">
@@ -64,25 +64,25 @@ function CommunityPage() {
         <section className="community-benefits">
           <div className="container">
             <div className="community-section-heading">
-              <p className="section-kicker">WHAT YOU'LL GET</p>
-              <h2>Useful ENT information, shared simply.</h2>
+              <p className="section-kicker">AAPKO KYA MILEGA</p>
+              <h2>ENT se related useful information, simple andaaz mein.</h2>
             </div>
             <div className="community-benefit-grid">
               <article className="community-benefit">
                 <CheckCircle2 />
-                <div><h3>Practical ENT Tips</h3><p>Learn simple, educational tips related to common ear, nose and throat concerns.</p></div>
+                <div><h3>Practical ENT Tips</h3><p>Ear, nose aur throat ke common issues ke hawale se simple aur useful tips hasil karein.</p></div>
               </article>
               <article className="community-benefit">
                 <CheckCircle2 />
-                <div><h3>Helpful Health Guidance</h3><p>Get easy-to-understand information that can help you better understand ENT symptoms.</p></div>
+                <div><h3>Useful Health Guidance</h3><p>Asaan zubaan mein information hasil karein taake aap ENT symptoms ko behtar samajh saken.</p></div>
               </article>
               <article className="community-benefit">
                 <CheckCircle2 />
-                <div><h3>Lahore-Focused Community</h3><p>Stay connected with an ENT health community created for people living in Lahore.</p></div>
+                <div><h3>Lahore Ke Liye Community</h3><p>Lahore mein rehne walon ke liye banayi gayi ENT health community se connected rahen.</p></div>
               </article>
               <article className="community-benefit">
                 <ShieldCheck />
-                <div><h3>Educational Content</h3><p>Receive general health education and awareness content. Personal medical advice requires a consultation.</p></div>
+                <div><h3>Health Education</h3><p>General health education aur awareness content hasil karein. Personal medical advice ke liye consultation zaroori hai.</p></div>
               </article>
             </div>
           </div>
@@ -92,12 +92,12 @@ function CommunityPage() {
           <div className="container community-cta-card">
             <div>
               <MessageCircle />
-              <p className="section-kicker light">JOIN THE COMMUNITY</p>
-              <h2>Get helpful ENT tips on WhatsApp.</h2>
-              <p>Join the free community and stay informed about ear, nose and throat health.</p>
+              <p className="section-kicker light">COMMUNITY JOIN KAREIN</p>
+              <h2>WhatsApp par useful ENT tips hasil karein.</h2>
+              <p>Free community join karein aur ear, nose aur throat health ke bare mein useful information hasil karte rahen.</p>
             </div>
             <a className="button light-community-button" href={communityJoinUrl} target="_blank" rel="noreferrer">
-              Join Community <ArrowRight size={17} />
+              Community Join Karein <ArrowRight size={17} />
             </a>
           </div>
         </section>
