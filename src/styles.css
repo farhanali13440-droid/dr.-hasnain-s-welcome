@@ -64,3 +64,6 @@ footer{color:#b7c8e1;background:#031638}.footer-grid{padding:60px 0 45px;display
 .community-location{right:-10px;bottom:42px}
 @media(max-width:900px){.community-hero-grid{grid-template-columns:1fr;gap:35px;padding:55px 20px 70px}.community-copy{max-width:720px}.community-visual{min-height:400px}.community-hero-glow{right:-180px;top:70%}.community-location{right:2px}}
 @media(max-width:560px){.community-copy h1{font-size:38px}.community-benefit-row{gap:7px}.community-benefit-row span{font-size:10px;padding:7px 9px}.community-join-button{width:100%;justify-content:center}.community-logo-card{height:390px}.community-logo-card img{width:155px;height:155px}.community-whatsapp-mark{top:55px;right:22px}.community-location{bottom:25px}.community-card-top{left:24px;right:24px}}
+.portrait-art-photo{inset:58px 24px 66px;border-radius:18px;overflow:hidden}
+.portrait-art-photo .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.portrait-art-photo .portrait-copy{left:0;right:0;bottom:0;padding:26px 10px 12px;background:linear-gradient(180deg,transparent,rgba(6,42,120,.85));color:#fff}
