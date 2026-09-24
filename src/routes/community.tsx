@@ -64,10 +64,6 @@ function CommunityPage() {
                 <div className="community-card-pill">100% FREE COMMUNITY</div>
               </div>
 
-              <div className="community-location">
-                <MapPin size={19} />
-                <span><strong>Lahore</strong><small>Local ENT community</small></span>
-              </div>
             </div>
           </div>
         </section>
