@@ -134,7 +134,6 @@ function Index() {
               <img src={drHasnainEntAsset.url} alt="Dr. Hasnain Haider in clinic" loading="lazy" />
               <div className="about-photo-overlay"><span>DR. HASNAIN HAIDER</span><strong>ENT SPECIALIST</strong><small>Head & Neck Surgical Oncology</small></div>
             </div>
-            <div className="about-accent"><Award size={18} /><span>Gold Medalist<br /><strong>MBBS</strong></span></div>
           </div>
           <div className="section-heading">
             <p className="section-kicker">ABOUT DR. HASNAIN</p><h2>Specialist care with a focus on your ENT health.</h2>
