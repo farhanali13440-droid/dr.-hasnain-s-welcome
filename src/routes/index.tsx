@@ -106,8 +106,6 @@ function Index() {
                 </div>
                 <div className="portrait-badge"><ShieldCheck size={17} /><span>Specialist ENT Care</span></div>
               </div>
-              <div className="floating-card floating-card-one"><Award size={19} /><span><strong>Gold Medalist</strong> MBBS</span></div>
-              <div className="floating-card floating-card-two"><MapPin size={18} /><span><strong>Lahore</strong> WAPDA Town</span></div>
             </div>
           </div>
         </section>
