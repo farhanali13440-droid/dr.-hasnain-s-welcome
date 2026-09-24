@@ -56,7 +56,6 @@ function CommunityPage() {
 
             <div className="community-visual">
               <div className="community-logo-card community-hero-card">
-                <div className="community-whatsapp-mark"><MessageCircle size={24} /></div>
                 <img className="community-hero-photo" src={drHasnainEnt2Asset.url} alt="Dr. Hasnain Haider in clinic" />
               </div>
 
